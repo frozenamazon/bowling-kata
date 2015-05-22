@@ -11,21 +11,11 @@
      *
      */
 
-    var app = angular.module('Weather');
+    var app = angular.module('Sample');
 
     app.factory('configurationService', function() {
 
-            var getOpenWeatherUrl = function() {
-                return 'http://api.openweathermap.org/data/2.5/weather';
-            };
-
-            var getOpenWeatherIconsUrl = function(icon) {
-                return 'http://openweathermap.org/img/w/' + icon + '.png';
-            };
-
             return {
-                getOpenWeatherUrl: getOpenWeatherUrl,
-                getOpenWeatherIconsUrl: getOpenWeatherIconsUrl
             };
         });
 }());

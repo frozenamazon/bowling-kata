@@ -11,10 +11,31 @@
      *
      */
 	
-	var app = angular.module('Weather', []);
+	var app = angular.module('Sample', []);
 
 	app.controller('MainCtrl', ['$scope', function ($scope){
-		$scope.weatherPage = 'modules/weather/partials/weather.html';
+
+          var A ;
+		
+          
+function solution(S) {
+    // write your code in JavaScript (ECMA-262, 5th edition)
+    if(!S || (typeof S !== 'string') || (S === '')){
+        return;
+    }
+    
+    var splitBySpace = S.split(" ");
+    var result = [];
+    for(var i = 0; i < splitBySpace.length; i++){
+        result.push(splitBySpace[i].split("").reverse().join(""));
+    }
+    
+    return result.join(" ");
+}
+
+
+          console.log(solution(A));
+
 
 	}]);
 
